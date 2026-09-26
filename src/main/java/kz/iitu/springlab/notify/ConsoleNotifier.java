@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component("console")
 @Order(1)
+@Primary
 public class ConsoleNotifier implements Notifier {
 
     private static final Logger log = LoggerFactory.getLogger(ConsoleNotifier.class);
